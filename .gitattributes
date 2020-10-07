@@ -1,1 +1,13 @@
 *.php linguist-vendored
+<<<<<<< HEAD
+=======
+
+*.html linguist-vendored
+
+*.js linguist-vendored
+
+.htaccess linguist-vendored
+
+*.css linguist-vendored
+*.scss linguist-vendored
+>>>>>>> 54054800ad26760c01d3633acb611f019e43fb05
