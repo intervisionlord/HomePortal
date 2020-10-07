@@ -14,6 +14,13 @@ define('LANGVERSION', 'Версия перевода');
 define('LNG_NAME', 'Имя');
 define('LNG_DESCR', 'Описание');
 
+# Форма авторизации
+define('LNG_LOGIN', 'Логин');
+define('LNG_PASSWORD', 'Пароль');
+define('LNG_LOGIN_DESCR', 'Введите Ваш логин');
+define('LNG_PASSWORD_DESCR', 'Введите Ваш пароль');
+define('LNG_BTN_LOGIN', 'Войти');
+
 # Пункты меню
 define('LNG_DOCUMENTATION', 'Документация');
 define('LNG_MODULES', 'Инструменты');
