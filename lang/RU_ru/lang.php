@@ -4,7 +4,7 @@
 # v.:0.1.3
 # @intervision
 
-$LANG_VER = '0.1.2';
+$LANG_VER = '0.1.3';
 
 # Портал
 define('LNG_TITLE', 'Система ДОМ');
@@ -20,6 +20,10 @@ define('LNG_PASSWORD', 'Пароль');
 define('LNG_LOGIN_DESCR', 'Введите Ваш логин');
 define('LNG_PASSWORD_DESCR', 'Введите Ваш пароль');
 define('LNG_BTN_LOGIN', 'Войти');
+define('LNG_AUTH_SUCCES', 'Успешная авторизация!');
+define('LNG_AUTH_SUCCESS_DESCR', 'Вы будете перенаправлены на главную страницу через несколько секунд.');
+define('LNG_AUTH_FAIL', 'Авторизация не пройдена!');
+define('LNG_AUTH_FAIL_DESCR', 'Скорее всего введен неправильный логин и/или пароль. Вы будете перенаправленыв на страницу авторизации через несколько секунд.');
 
 # Пункты меню
 define('LNG_DOCUMENTATION', 'Документация');
