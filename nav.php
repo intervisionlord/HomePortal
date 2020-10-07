@@ -4,6 +4,19 @@
 # v.:0.0.1
 # @intervision
 
+if ($WARN_TESTCONFIG == '1') {
+  echo '
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>'.LNG_WARNING.'</strong> '.LNG_TESTCONFIG_USED.'
+    <br>
+    <small>'.LNG_DONTUSEDBG.'</small>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  ';
+}
+
 echo '
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">

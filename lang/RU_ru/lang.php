@@ -1,7 +1,7 @@
 <?php
 # lang.php
 # Файл локализации (RUSSIAN)
-# v.:0.1.2
+# v.:0.1.3
 # @intervision
 
 $LANG_VER = '0.1.2';
@@ -30,5 +30,7 @@ define('LNG_ABT_TOOLS', 'Установленные инструменты');
 
 # Прочее
 define('LNG_COPY', '© intervision');
-
+define('LNG_TESTCONFIG_USED', 'Используется отладочный файл конфигурации');
+define('LNG_WARNING', 'Внимание!');
+define('LNG_DONTUSEDBG', 'Не используйте отладочные функции на продуктивной системе');
 ?>
