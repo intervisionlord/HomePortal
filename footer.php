@@ -1,7 +1,7 @@
 <?php
 # footer.php
 # Шаблон подвала портала
-# v.:0.0.1
+# v.:0.1.1
 # @intervision
 
 # Нижний бар
@@ -19,4 +19,6 @@ echo '
   </body>
 </html>
 ';
+
+session_write_close();
 ?>

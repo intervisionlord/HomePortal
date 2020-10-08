@@ -1,7 +1,7 @@
 <?php
 # nav.php
 # Шаблон наивгационной панели
-# v.:0.0.1
+# v.:0.1.3
 # @intervision
 
 if ($WARN_TESTCONFIG == '1') {
@@ -60,6 +60,22 @@ echo '
 
     </ul>
   </div>
+';
+
+if (isset($_SESSION['name'])) {
+  echo '
+  <span class="navbar-text">
+    '.$_SESSION['name'].'
+  </span>';
+} else {
+  var_dump($_SESSION);
+  echo '
+  <span class="navbar-text">
+    Not Authorized User
+  </span>
+  ';
+}
+echo '
 </nav>
 
 <div class="container">

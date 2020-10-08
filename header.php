@@ -1,8 +1,11 @@
 <?php
 # header.php
 # Шаблон шапки портала
-# v.:0.0.1
+# v.:0.1.2
 # @intervision
+
+session_start();
+//session_regenerate_id();
 
 echo '
 <html>

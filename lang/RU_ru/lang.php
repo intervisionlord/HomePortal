@@ -1,10 +1,10 @@
 <?php
 # lang.php
 # Файл локализации (RUSSIAN)
-# v.:0.1.3
+# v.:0.1.5
 # @intervision
 
-$LANG_VER = '0.1.3';
+$LANG_VER = '0.1.5';
 
 # Портал
 define('LNG_TITLE', 'Система ДОМ');
@@ -24,6 +24,9 @@ define('LNG_AUTH_SUCCES', 'Успешная авторизация!');
 define('LNG_AUTH_SUCCESS_DESCR', 'Вы будете перенаправлены на главную страницу через несколько секунд.');
 define('LNG_AUTH_FAIL', 'Авторизация не пройдена!');
 define('LNG_AUTH_FAIL_DESCR', 'Скорее всего введен неправильный логин и/или пароль. Вы будете перенаправленыв на страницу авторизации через несколько секунд.');
+define('LNG_ALREADY_AUTH', 'Вы уже авторизованы');
+define('LNG_AUTH_EXIT', 'Выход');
+define('LNG_AUTH_LOGGED_OUT', 'Выход выполнен');
 
 # Пункты меню
 define('LNG_DOCUMENTATION', 'Документация');
