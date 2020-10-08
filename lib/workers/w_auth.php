@@ -1,7 +1,7 @@
 <?php
 # w_auth.php
 # Обработчик авторизации
-# v.:0.1.3
+# v.:0.1.4
 # © 2020 intervision
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/conf/settings.php');
@@ -25,7 +25,7 @@ if (!empty($_POST['password']) and !empty($_POST['login']) ) {
 			$_SESSION['auth'] = true;
 			$_SESSION['id'] = $user['id'];
 			$_SESSION['login'] = $user['login'];
-      $_SESSIOM['name'] = $user['name'];
+      $_SESSION['name'] = $user['name'];
 
       echo '
       <div class="alert alert-success m-5" role="alert">
