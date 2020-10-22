@@ -1,7 +1,7 @@
 <?php
 # nav.php
 # Шаблон наивгационной панели
-# v.:0.1.3
+# v.:0.1.5
 # @intervision
 
 if ($WARN_TESTCONFIG == '1') {
@@ -64,16 +64,27 @@ echo '
 
 if (isset($_SESSION['name'])) {
   echo '
-  <span class="navbar-text">
-    '.$_SESSION['name'].'
-  </span>';
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        '.ICO_USER.' '.$_SESSION['name'].'
+      </a>
+        <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark text-light" href="/lib/workers/w_logout?logout=logout">'.ICO_KEY.' '.LNG_AUTH_EXIT.'</a>
+        </div>
+    </li>
+  </ul>';
 } else {
-  var_dump($_SESSION);
   echo '
   <span class="navbar-text">
-    Not Authorized User
+    '.LNG_AUTH_NOT_COMPL.'
   </span>
-  ';
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link " href="/auth">'.ICO_KEY.' '.LNG_BTN_LOGIN.'</a>
+    </li>
+  </ul>';
 }
 echo '
 </nav>

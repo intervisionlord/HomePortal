@@ -1,7 +1,7 @@
 <?php
 # w_auth.php
 # Обработчик авторизации
-# v.:0.1.4
+# v.:0.1.5
 # © 2020 intervision
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/conf/settings.php');
@@ -29,7 +29,7 @@ if (!empty($_POST['password']) and !empty($_POST['login']) ) {
 
       echo '
       <div class="alert alert-success m-5" role="alert">
-      '.LNG_AUTH_SUCCES.'<br><small>'.LNG_AUTH_SUCCESS_DESCR.'</small>
+      '.LNG_AUTH_SUCCES.'<br><small>'.LNG_AUTH_REDIRECT.'</small>
       </div>
       ';
     } else {

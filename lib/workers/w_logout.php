@@ -1,7 +1,7 @@
 <?php
 # w_logout.php
 # Обработчик авторизации - выход
-# v.:0.1.0
+# v.:0.1.1
 # © 2020 intervision
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/conf/settings.php');
@@ -11,7 +11,7 @@ if (!empty($_GET['logout']) and $_GET['logout'] == 'logout') {
   session_destroy();
   echo '
   <div class="alert alert-success m-5" role="alert">
-  '.LNG_AUTH_LOGGED_OUT.'
+  '.LNG_AUTH_LOGGED_OUT.'<br><small>'.LNG_AUTH_REDIRECT.'</small>
   </div>
   ';
 }
