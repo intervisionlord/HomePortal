@@ -1,7 +1,7 @@
 <?php
 # settings.php
 # Основные настройки и базовые переменные
-# v.:0.1.7
+# v.:0.1.9
 # © 2020 intervision
 
 ### Базовые переменные
@@ -11,7 +11,7 @@ $BASEDIR = $_SERVER['DOCUMENT_ROOT'];
 ### Не редактируйте все, что ниже этого комментиря
 ### Системные переменные
 $TOOLS_DIR = $BASEDIR.'/tools';
-$VERSION = '0.1.7';
+$VERSION = '0.1.9';
 
 ### Подключение зависимостей
 include_once($BASEDIR.'/lang/'.$LANG.'/lang.php');

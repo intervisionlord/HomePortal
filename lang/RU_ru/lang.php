@@ -4,15 +4,27 @@
 # v.:0.1.6
 # @intervision
 
-$LANG_VER = '0.1.6';
+$LANG_VER = '0.1.8';
 
 # Портал
 define('LNG_TITLE', 'Система ДОМ');
 
 # Общие
 define('LANGVERSION', 'Версия перевода');
-define('LNG_NAME', 'Имя');
 define('LNG_DESCR', 'Описание');
+define('LNG_COMMENT', 'Комментарий');
+define('LNG_ABSENT', 'Отсутствует');
+define('LNG_DELETE', 'Удалить');
+define('LNG_EDIT', 'Изменить');
+define('LNG_ACTION', 'Действие');
+
+# Пользователь
+define('LNG_NAME', 'Имя');
+define('LNG_EMAIL', 'email');
+define('LNG_STATUS', 'Статус');
+define('LNG_ADMIN', 'Администратор');
+define('LNG_EDITOR', 'Редактор');
+define('LNG_USER', 'Пользователь');
 
 # Форма авторизации
 define('LNG_LOGIN', 'Логин');
@@ -33,6 +45,7 @@ define('LNG_AUTH_NOT_COMPL', 'Вход не выполнен');
 define('LNG_DOCUMENTATION', 'Документация');
 define('LNG_MODULES', 'Инструменты');
 define('LNG_ABOUT', 'О системе');
+define('LNG_USERSETTINGS', 'Управление пользователями');
 
 # Страница "О системе"
 define('LNG_ABT_PARAM', 'Параметр');

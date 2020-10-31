@@ -14,9 +14,8 @@ if (!empty($_POST['password']) and !empty($_POST['login']) ) {
   $password = md5($_POST['password']);
 
 # ВЫБРАТЬ ИЗ таблицы_users ГДЕ поле_логин = $login И поле_пароль = $password.
-
   $query = 'SELECT*FROM users WHERE login="'.$login.'" AND pass="'.$password.'"';
-  $result = mysqli_query($DBLINK, $query); //ответ базы запишем в переменную $result
+  $result = mysqli_query($DBLINK, $query); //ответ базы пишем в переменную $result
   $user = mysqli_fetch_assoc($result); //преобразуем ответ из БД в нормальный массив PHP
 
 # Если БД вернула не пустой ответ - значит пара логин-пароль правильная
@@ -26,6 +25,7 @@ if (!empty($_POST['password']) and !empty($_POST['login']) ) {
 			$_SESSION['id'] = $user['id'];
 			$_SESSION['login'] = $user['login'];
       $_SESSION['name'] = $user['name'];
+      $_SESSION['status'] = $user['status'];
 
       echo '
       <div class="alert alert-success m-5" role="alert">
