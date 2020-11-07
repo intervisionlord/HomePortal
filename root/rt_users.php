@@ -1,11 +1,10 @@
 <?php
 # rt_users.php
 # Страница управления пользователями
-# v.:0.1.5
+# v.:0.1.6
 # ©2020 intervision
 
 include_once($_SERVER['DOCUMENT_ROOT'].'/conf/settings.php');
-
 include_once($BASEDIR.'/header.php');
 
 if (isset($_SESSION['name']) and isset($_SESSION['status']) and $_SESSION['status'] == '1') {
@@ -14,6 +13,7 @@ if (isset($_SESSION['name']) and isset($_SESSION['status']) and $_SESSION['statu
     $result_users = mysqli_query($DBLINK, $query_users);
 
   echo '
+  <h2>'.LNG_USERLIST.'</h2>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -26,7 +26,6 @@ if (isset($_SESSION['name']) and isset($_SESSION['status']) and $_SESSION['statu
       </tr>
     </thead>
     <tbody>
-      <tr>
       ';
 
 # Формируем таблицу с пользователями
@@ -51,7 +50,8 @@ while ($user = mysqli_fetch_assoc($result_users)) {
     } elseif ($user['status'] == '3') {
       $userstatus = LNG_USER;
     }
-        echo '
+      echo '
+      <tr>
         <td>'.$user['login'].'</td>
         <td>'.$user['name'].'</td>
         <td>'.$userstatus.'</td>
@@ -65,13 +65,18 @@ while ($user = mysqli_fetch_assoc($result_users)) {
                 <button class="btn btn-outline-danger btn-sm" type="submit" name="useraction" value="delete">'.LNG_DELETE.'</button>
               </div>
             </form>
-          </td>';
+          </td>
+      </tr>';
       }
+
     echo '
-      </tr>
     </tbody>
   </table>
-
+<form action="/root/rt_w_adduser" method="POST">
+  <div class="form-group">
+    <button class="btn btn-success btn-sm" type="submit" name="useraction" value="add">'.ICO_ADDUSER.' '.LNG_ADDUSER.'</button>
+  </div>
+</form>
   ';
 
 

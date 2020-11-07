@@ -1,10 +1,10 @@
 <?php
 # lang.php
 # Файл локализации (RUSSIAN)
-# v.:0.1.6
-# @intervision
+# v.:0.1.9
+# ©2020 intervision
 
-$LANG_VER = '0.1.8';
+$LANG_VER = '0.1.9';
 
 # Портал
 define('LNG_TITLE', 'Система ДОМ');
@@ -15,8 +15,10 @@ define('LNG_DESCR', 'Описание');
 define('LNG_COMMENT', 'Комментарий');
 define('LNG_ABSENT', 'Отсутствует');
 define('LNG_DELETE', 'Удалить');
+define('LNG_DELETED', 'Удален');
 define('LNG_EDIT', 'Изменить');
 define('LNG_ACTION', 'Действие');
+define('LNG_ERROR', 'Ошибка');
 
 # Пользователь
 define('LNG_NAME', 'Имя');
@@ -25,6 +27,9 @@ define('LNG_STATUS', 'Статус');
 define('LNG_ADMIN', 'Администратор');
 define('LNG_EDITOR', 'Редактор');
 define('LNG_USER', 'Пользователь');
+define('LNG_USERLIST', 'Список пользователей');
+define('LNG_ADDUSER', 'Добавить пользователя');
+define('LNG_WASADDED', 'был добавлен с правами');
 
 # Форма авторизации
 define('LNG_LOGIN', 'Логин');
