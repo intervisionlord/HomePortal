@@ -11,7 +11,7 @@ $BASEDIR = $_SERVER['DOCUMENT_ROOT'];
 ### Не редактируйте все, что ниже этого комментиря
 ### Системные переменные
 $TOOLS_DIR = $BASEDIR.'/tools';
-$VERSION = '0.2.0';
+$VERSION = '0.2.1';
 
 ### Подключение зависимостей
 include_once($BASEDIR.'/lang/'.$LANG.'/lang.php');

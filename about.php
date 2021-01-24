@@ -7,7 +7,7 @@
 include_once('./conf/settings.php');
 
 include_once($BASEDIR.'/header.php');
-
+$PHPVERSION = phpversion();
 $TOOLS_COUNT = count(glob($BASEDIR.'/tools/*', GLOB_ONLYDIR));
 
 echo '
@@ -23,6 +23,10 @@ echo '
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>'.LNG_ABOUT_PHPVER.'</td>
+      <td>'.$PHPVERSION.'</td>
+    </tr>
     <tr>
       <td>'.LNG_ABT_VERSION.'</td>
       <td>'.$VERSION.'</td>
