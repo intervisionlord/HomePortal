@@ -1,8 +1,8 @@
 <?php
 # about.php
 # Страница "О скрипте"
-# v.:0.1.1
-# © 2020 intervision
+# v.:0.1.2
+# © 2020-2021 intervision
 
 include_once('./conf/settings.php');
 

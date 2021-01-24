@@ -1,8 +1,8 @@
 <?php
 # auth.php
 # Скрипт авторизации, форма запроса логина и пароля
-# v.:0.1.2
-# ©2020 intervision
+# v.:0.1.5
+# ©2020-2021 intervision
 
 include_once('./conf/settings.php');
 

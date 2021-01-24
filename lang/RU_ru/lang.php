@@ -1,8 +1,8 @@
 <?php
 # lang.php
 # Файл локализации (RUSSIAN)
-# v.:0.1.9
-# ©2020 intervision
+# v.:0.2.1
+# ©2020-2021 intervision
 
 $LANG_VER = '0.2.1';
 
