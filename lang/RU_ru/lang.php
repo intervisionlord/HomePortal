@@ -4,7 +4,7 @@
 # v.:0.1.9
 # ©2020 intervision
 
-$LANG_VER = '0.2';
+$LANG_VER = '0.2.1';
 
 # Портал
 define('LNG_TITLE', 'Система ДОМ');
@@ -58,7 +58,7 @@ define('LNG_ABT_PARAM', 'Параметр');
 define('LNG_ABT_VALUE', 'Значение');
 define('LNG_ABT_LANG', 'Локализация');
 define('LNG_ABT_VERSION', 'Версия скрипта');
-define('LNG_TOOLS_COUNT', 'Количество иснструментов');
+define('LNG_TOOLS_COUNT', 'Количество инструментов');
 define('LNG_ABT_COMMON', 'Общие сведения');
 define('LNG_ABT_TOOLS', 'Установленные инструменты');
 
